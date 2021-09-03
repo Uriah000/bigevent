@@ -43,6 +43,7 @@ function renderAvatar(user) {
     // 3.按需渲染用户头像
     if (user.user_pic !== null) {
         // 渲染图片头像
+        $('.text-avatar').html(first).hide()
         $('.layui-nav-img').attr('src', user.user_pic).show()
     } else {
         // 渲染用户头像
